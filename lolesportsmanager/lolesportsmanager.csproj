@@ -2,11 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationInsightsResourceId>/subscriptions/444aa990-bb8b-4245-8fe6-81102d0a04ec/resourcegroups/lolesportsmanager/providers/microsoft.insights/components/lolesportsmanager</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/444aa990-bb8b-4245-8fe6-81102d0a04ec/resourcegroups/lolesportsmanager/providers/microsoft.insights/components/lolesportsmanager</ApplicationInsightsAnnotationResourceId>
+    <UserSecretsId>793bd07f-79ce-4767-903b-4bea6f3933c4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Players\" />
+    <Folder Include="Pages\Teams\" />
   </ItemGroup>
 
 </Project>
